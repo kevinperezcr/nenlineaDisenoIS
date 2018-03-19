@@ -1,0 +1,3 @@
+/*BOOSTRAP COMMANDS*/
+npm install bootstrap --save
+npm install --save reactstrap@next react react-dom
