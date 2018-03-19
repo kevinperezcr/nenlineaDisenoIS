@@ -26,9 +26,13 @@ class Dashboard extends Component {
 
   pintarGane(){
     if (this.state.metodo.gana===1){
-      console.log("en gane 3")
-      alert("Ganó el jugador X, juego terminado 3"+this.state.metodo.gana);
+      console.log("Gana fichas rojas")
+      alert("Ganó el jugador con fichas rojas!");
      
+    }
+    else if(this.state.metodo.gana===2){
+      console.log("Gana fichas amarillas")
+      alert("Ganó el jugador con fichas amarillas!");
     }
 
   }
@@ -41,22 +45,22 @@ class Dashboard extends Component {
 
     else if(wich===1){
 
-      return "./ficha.png";
+      return "./fichaJugador1.png";
     }
 
     else if(wich === 2){
 
-      return "./ficha2.png";
+      return "./fichaJugador2.png";
     }
 
     else if(wich === 3){
  
-      return "./ficha1winner.png";
+      return "./fichaGanaJugador1.png";
       
     }
     else if(wich === 4){
   
-      return "./ficha2winner.png";
+      return "./fichaGanaJugador2.png";
       
     }
 
